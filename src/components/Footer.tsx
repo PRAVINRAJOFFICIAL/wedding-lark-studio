@@ -3,9 +3,7 @@ import logo from "@/assets/logo.jpg";
 const Footer = () => (
   <footer className="py-12 bg-background border-t border-border">
     <div className="container mx-auto px-6 text-center">
-      <p className="font-heading text-xl text-primary mb-2">
-        WEDLARKWEDS
-      </p>
+      <img src={logo} alt="WEDLARKWEDS Logo" className="h-12 w-auto mx-auto mb-2" />
       <p className="font-body text-sm text-muted-foreground mb-6">
         Wedding Photography & Videography
       </p>
