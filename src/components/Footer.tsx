@@ -1,13 +1,13 @@
 const Footer = () => (
   <footer className="py-12 bg-background border-t border-border">
     <div className="container mx-auto px-6 text-center">
-      <p className="font-heading text-xl tracking-[0.2em] text-gold mb-2">
+      <p className="font-heading text-xl text-primary mb-2">
         WEDLARKWEDS
       </p>
       <p className="font-body text-sm text-muted-foreground mb-6">
-        Wedding Photography & Videography Studio
+        Wedding Photography & Videography
       </p>
-      <div className="w-12 h-px bg-gold/30 mx-auto mb-6" />
+      <div className="w-12 h-px bg-border mx-auto mb-6" />
       <p className="font-body text-xs text-muted-foreground mb-1">
         © {new Date().getFullYear()} WEDLARKWEDS. All rights reserved.
       </p>
