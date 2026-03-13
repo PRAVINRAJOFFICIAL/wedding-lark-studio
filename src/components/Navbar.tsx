@@ -4,8 +4,8 @@ import { Menu, X } from "lucide-react";
 const navLinks = [
   { label: "About", href: "#about" },
   { label: "Services", href: "#services" },
-  { label: "Portfolio", href: "#portfolio" },
-  { label: "Packages", href: "#packages" },
+  { label: "Why Us", href: "#whyus" },
+  { label: "Testimonials", href: "#testimonials" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -22,28 +22,26 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled ? "bg-background/95 backdrop-blur-md border-b border-border" : "bg-transparent"
+        scrolled ? "bg-background/95 backdrop-blur-md shadow-sm" : "bg-transparent"
       }`}
     >
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
-        <a href="#" className="font-heading text-xl tracking-[0.3em] text-gold">
+        <a href="#" className="font-heading text-xl text-primary tracking-wide">
           WEDLARKWEDS
         </a>
 
-        {/* Desktop */}
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((l) => (
             <a
               key={l.href}
               href={l.href}
-              className="text-sm font-body tracking-widest uppercase text-foreground/70 hover:text-gold transition-colors duration-300"
+              className="text-sm font-body font-medium text-foreground/60 hover:text-primary transition-colors duration-300"
             >
               {l.label}
             </a>
           ))}
         </div>
 
-        {/* Mobile toggle */}
         <button
           onClick={() => setOpen(!open)}
           className="md:hidden text-foreground"
@@ -53,16 +51,15 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile menu */}
       {open && (
-        <div className="md:hidden bg-background/98 backdrop-blur-md border-t border-border animate-fade-in">
+        <div className="md:hidden bg-background border-t border-border animate-fade-in">
           <div className="flex flex-col items-center gap-6 py-8">
             {navLinks.map((l) => (
               <a
                 key={l.href}
                 href={l.href}
                 onClick={() => setOpen(false)}
-                className="text-sm font-body tracking-widest uppercase text-foreground/70 hover:text-gold transition-colors"
+                className="text-sm font-body font-medium text-foreground/60 hover:text-primary transition-colors"
               >
                 {l.label}
               </a>
