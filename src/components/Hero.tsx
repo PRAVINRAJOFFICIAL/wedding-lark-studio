@@ -15,7 +15,7 @@ const Hero = () => (
       </p>
 
       <h1
-        className="font-heading text-5xl sm:text-6xl md:text-7xl text-foreground mb-6 opacity-0 animate-fade-in-up"
+        className="font-brand text-5xl sm:text-6xl md:text-7xl text-foreground mb-6 opacity-0 animate-fade-in-up"
         style={{ animationDelay: "0.3s" }}
       >
         WEDLARKWEDS

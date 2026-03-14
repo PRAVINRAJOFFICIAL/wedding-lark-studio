@@ -16,6 +16,7 @@ export default {
       fontFamily: {
         heading: ["DM Serif Display", "Georgia", "serif"],
         body: ["DM Sans", "system-ui", "sans-serif"],
+        brand: ["Adelicia Script", "cursive"],
       },
       colors: {
         border: "hsl(var(--border))",
