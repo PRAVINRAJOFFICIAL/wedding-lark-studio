@@ -15,7 +15,7 @@ const Contact = () => (
         </h2>
         <div className="w-12 h-0.5 bg-primary mx-auto mb-8 rounded-full" />
 
-        <p className="font-brand text-2xl text-foreground mb-2">WEDLARKWEDS</p>
+        <p className="font-brand text-2xl text-foreground mb-2">Wedlarkweds</p>
         <p className="font-body text-muted-foreground mb-4">
           Wedding Photography & Videography
         </p>
