@@ -1,10 +1,16 @@
+import heroBg from "@/assets/hero-bg.jpg";
+
 const WHATSAPP_URL =
-  "https://wa.me/917448889905?text=Hello%20WEDLARKWEDS%2C%20I%20want%20to%20book%20a%20wedding%20photography%20service.";
+  "https://wa.me/917448889905?text=Hello%20Wedlarkweds%2C%20I%20want%20to%20book%20a%20wedding%20photography%20service.";
 
 const Hero = () => (
-  <section className="relative min-h-screen flex items-center justify-center bg-background overflow-hidden">
-    {/* Subtle green gradient orb */}
-    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-primary/5 blur-3xl" />
+  <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    {/* Background image */}
+    <div
+      className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: `url(${heroBg})` }}
+    />
+    <div className="absolute inset-0 bg-background/70" />
 
     <div className="relative z-10 text-center px-6 max-w-3xl mx-auto">
       <p
@@ -18,7 +24,7 @@ const Hero = () => (
         className="font-brand text-5xl sm:text-6xl md:text-7xl text-foreground mb-6 opacity-0 animate-fade-in-up"
         style={{ animationDelay: "0.3s" }}
       >
-        WEDLARKWEDS
+        Wedlarkweds
       </h1>
 
       <p
