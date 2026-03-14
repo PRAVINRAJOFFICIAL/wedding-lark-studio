@@ -12,12 +12,12 @@ import gallery7 from "@/assets/gallery-7.jpg";
 import gallery8 from "@/assets/gallery-8.jpg";
 
 const images = [
-  { src: gallery1, label: "Wedding Couple" },
-  { src: gallery2, label: "Mandap Decoration" },
-  { src: gallery3, label: "Wedding Moments" },
-  { src: gallery4, label: "Stage Decoration" },
-  { src: gallery5, label: "Pre-Wedding Shoot" },
-  { src: gallery6, label: "Wedding Ceremony" },
+  { src: gallery1, label: "Mandap Decoration" },
+  { src: gallery2, label: "Traditional Sweets Setup" },
+  { src: gallery3, label: "Entrance Decoration" },
+  { src: gallery4, label: "Floral Arch" },
+  { src: gallery5, label: "Haldi Ceremony Setup" },
+  { src: gallery6, label: "Sangeet Stage" },
   { src: gallery7, label: "Wedding Traditions" },
   { src: gallery8, label: "Welcome Display" },
 ];
@@ -39,7 +39,7 @@ const Gallery = () => {
             <div className="w-12 h-0.5 bg-primary mx-auto rounded-full" />
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
             {images.map((img, i) => (
               <div
                 key={i}
