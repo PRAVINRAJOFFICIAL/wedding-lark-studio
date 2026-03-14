@@ -1,5 +1,5 @@
 import { FadeInSection } from "@/hooks/useFadeIn";
-import { MessageCircle } from "lucide-react";
+import { MessageCircle, MapPin } from "lucide-react";
 
 const WHATSAPP_URL = "https://wa.me/917448889905";
 
@@ -16,9 +16,15 @@ const Contact = () => (
         <div className="w-12 h-0.5 bg-primary mx-auto mb-8 rounded-full" />
 
         <p className="font-heading text-xl text-foreground mb-2">WEDLARKWEDS</p>
-        <p className="font-body text-muted-foreground mb-10">
+        <p className="font-body text-muted-foreground mb-4">
           Wedding Photography & Videography
         </p>
+        <div className="flex items-center justify-center gap-2 mb-10">
+          <MapPin size={16} className="text-primary" />
+          <p className="font-body text-sm text-muted-foreground">
+            Thirunagar 3rd Stop, Madurai, Tamil Nadu, India
+          </p>
+        </div>
 
         <a
           href={WHATSAPP_URL}

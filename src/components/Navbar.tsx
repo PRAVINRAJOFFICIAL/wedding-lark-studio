@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-import logo from "@/assets/logo.jpg";
+import logo from "@/assets/logo.png";
 
 const navLinks = [
   { label: "About", href: "#about" },
   { label: "Services", href: "#services" },
+  { label: "Gallery", href: "#gallery" },
   { label: "Why Us", href: "#whyus" },
   { label: "Testimonials", href: "#testimonials" },
   { label: "Contact", href: "#contact" },
