@@ -1,4 +1,5 @@
-import logo from "@/assets/logo.jpg";
+import logo from "@/assets/logo.png";
+import { MapPin } from "lucide-react";
 
 const Footer = () => (
   <footer className="py-12 bg-background border-t border-border">
