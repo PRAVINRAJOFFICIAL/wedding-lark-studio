@@ -1,5 +1,5 @@
 import { FadeInSection } from "@/hooks/useFadeIn";
-import { MessageCircle } from "lucide-react";
+import { MessageCircle, MapPin } from "lucide-react";
 
 const WHATSAPP_URL = "https://wa.me/917448889905";
 
